@@ -3,7 +3,7 @@ import db from '../config/db.js';
 // get all headers
 export const getHeader = async (req, res) => {
     try {
-        const [rows] = await db.query('select * from header order by `sort_order ASC');
+        const [rows] = await db.query('select * from header order by `sort_order` ASC');
         res.json(rows);
     } catch (error) {
         console.error('Database Error:', error);
