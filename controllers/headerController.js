@@ -21,7 +21,7 @@ export const reorderheader = async (req, res) => {
     res.json({ success: true });
 }
 
-// Add New Navbar Element
+// Add New header Element
 export const addHeader = async (req, res) => {
     const { header_name, header_icon, header_url, sort_order, status_id } = req.body;
     try {
@@ -33,6 +33,8 @@ export const addHeader = async (req, res) => {
         res.status(500).json({ error: 'Database error' });
     }
 };
+ 
+
 
 // Update Navbar Element
 export const updateHeader = async (req, res) => {

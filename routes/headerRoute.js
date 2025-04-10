@@ -3,7 +3,7 @@ import { addHeader, deleteHeader, getHeader, getHeaderSetting, reorderheader, up
 import { verifyToken } from "../middleware/authMiddleware.js";
 const router = express.Router();
 
-router.get("/getHeader", verifyToken, getHeader);
+router.get("/getHeader", getHeader);
 router.post('/addHeader', verifyToken, addHeader);
 router.put('/updateHeader/:id', verifyToken, updateHeader);
 router.put('/reorderheader', verifyToken, reorderheader);
