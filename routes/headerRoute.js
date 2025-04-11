@@ -11,7 +11,7 @@ router.delete('/deleteHeader/:id', verifyToken, deleteHeader)
 
 
 
-router.get("/getHeaderSetting", verifyToken, getHeaderSetting)
+router.get("/getHeaderSetting", getHeaderSetting)
 
 
 export default router;

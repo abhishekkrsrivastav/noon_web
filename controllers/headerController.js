@@ -49,7 +49,7 @@ export const updateHeader = async (req, res) => {
     }
 };
 
-// Delete Navbar Element
+// Delete header Element
 export const deleteHeader = async (req, res) => {
     try {
         await db.query(`DELETE FROM header WHERE header_id=?`, [req.params.id]);
